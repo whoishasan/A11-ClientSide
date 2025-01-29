@@ -16,7 +16,7 @@ const FeedbackForm = () => {
   // Fetch feedback list on page load
   useEffect(() => {
     axios
-      .get("http://localhost:5000/testimonial")
+      .get("https://studyhive-one.vercel.app/testimonial")
       .then((response) => setFeedbackList(response.data))
       .catch((error) => console.error("Error fetching testimonials:", error));
   }, []);
@@ -61,7 +61,7 @@ const FeedbackForm = () => {
 
     // Submit the feedback to the API
     axios
-      .post("http://localhost:5000/testimonial", feedbackData)
+      .post("https://studyhive-one.vercel.app/testimonial", feedbackData)
       .then((response) => {
         console.log("Feedback submitted:", response.data);
         setFeedbackList((prev) => [...prev, feedbackData]);

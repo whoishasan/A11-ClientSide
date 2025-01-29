@@ -24,14 +24,12 @@ const router = createBrowserRouter(
         {
           path: "/",
           element: <Home />,
-          loader: () =>
-            fetch("https://collabor-iq-server-nine.vercel.app/testimonial"),
+          loader: () => fetch("https://studyhive-one.vercel.app/testimonial"),
         },
         {
           path: "/assignments",
           element: <Assignments></Assignments>,
-          loader: () =>
-            fetch("https://collabor-iq-server-nine.vercel.app/assignments"),
+          loader: () => fetch("https://studyhive-one.vercel.app/assignments"),
         },
         {
           path: "/Details/:id",
@@ -41,9 +39,7 @@ const router = createBrowserRouter(
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(
-              `https://collabor-iq-server-nine.vercel.app/assignments/${params.id}`
-            ),
+            fetch(`https://studyhive-one.vercel.app/${params.id}`),
         },
         {
           path: "/submit-assignment/:id",
@@ -80,8 +76,7 @@ const router = createBrowserRouter(
         {
           path: "/pending-assignment",
           element: <PendingAssignment></PendingAssignment>,
-          loader: () =>
-            fetch("https://collabor-iq-server-nine.vercel.app/submissions"),
+          loader: () => fetch("https://studyhive-one.vercel.app/submissions"),
         },
         {
           path: "update-campaign/:id",
@@ -91,9 +86,7 @@ const router = createBrowserRouter(
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(
-              `https://collabor-iq-server-nine.vercel.app/assignments/${params.id}`
-            ),
+            fetch(`https://studyhive-one.vercel.app/assignments/${params.id}`),
         },
         {
           path: "/login",

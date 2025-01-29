@@ -33,16 +33,13 @@ const UpdateAssignments = () => {
       userName,
     };
 
-    fetch(
-      `https://collabor-iq-server-nine.vercel.app/assignments/${assignment._id}`,
-      {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newAssignment),
-      }
-    )
+    fetch(`https://studyhive-one.vercel.app/assignments/${assignment._id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newAssignment),
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount > 0) {

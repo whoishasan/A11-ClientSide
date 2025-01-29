@@ -32,7 +32,7 @@ const CreateAssignments = () => {
       userName,
     };
 
-    fetch("https://collabor-iq-server-nine.vercel.app/assignments", {
+    fetch("https://studyhive-one.vercel.app/assignments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

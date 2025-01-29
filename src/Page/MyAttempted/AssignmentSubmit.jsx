@@ -25,7 +25,7 @@ const AssignmentSubmit = () => {
       status: "Pending",
     };
 
-    fetch("https://collabor-iq-server-nine.vercel.app/submissions", {
+    fetch("https://studyhive-one.vercel.app/submissions", {
       method: "POST",
       headers: {
         "content-type": "application/json",
