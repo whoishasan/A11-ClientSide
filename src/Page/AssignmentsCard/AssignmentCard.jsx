@@ -31,7 +31,7 @@ const AssignmentCard = ({ assignment, onDelete }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://collabor-iq-server.vercel.app/assignments/${_id}`, {
+        fetch(`https://collabor-iq-server-nine.vercel.app/assignments/${_id}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

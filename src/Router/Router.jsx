@@ -25,13 +25,13 @@ const router = createBrowserRouter(
           path: "/",
           element: <Home />,
           loader: () =>
-            fetch("https://collabor-iq-server.vercel.app/testimonial"),
+            fetch("https://collabor-iq-server-nine.vercel.app/testimonial"),
         },
         {
           path: "/assignments",
           element: <Assignments></Assignments>,
           loader: () =>
-            fetch("https://collabor-iq-server.vercel.app/assignments"),
+            fetch("https://collabor-iq-server-nine.vercel.app/assignments"),
         },
         {
           path: "/Details/:id",
@@ -42,7 +42,7 @@ const router = createBrowserRouter(
           ),
           loader: ({ params }) =>
             fetch(
-              `https://collabor-iq-server.vercel.app/assignments/${params.id}`
+              `https://collabor-iq-server-nine.vercel.app/assignments/${params.id}`
             ),
         },
         {
@@ -81,7 +81,7 @@ const router = createBrowserRouter(
           path: "/pending-assignment",
           element: <PendingAssignment></PendingAssignment>,
           loader: () =>
-            fetch("https://collabor-iq-server.vercel.app/submissions"),
+            fetch("https://collabor-iq-server-nine.vercel.app/submissions"),
         },
         {
           path: "update-campaign/:id",
@@ -92,7 +92,7 @@ const router = createBrowserRouter(
           ),
           loader: ({ params }) =>
             fetch(
-              `https://collabor-iq-server.vercel.app/assignments/${params.id}`
+              `https://collabor-iq-server-nine.vercel.app/assignments/${params.id}`
             ),
         },
         {

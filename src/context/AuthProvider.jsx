@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
         const user = { email: currentUser.email };
 
         axios
-          .post("https://collabor-iq-server.vercel.app/jwt", user, {
+          .post("https://collabor-iq-server-nine.vercel.app/jwt", user, {
             withCredentials: true,
           })
           .then((res) => {
@@ -73,7 +73,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "https://collabor-iq-server.vercel.app/logout",
+            "https://collabor-iq-server-nine.vercel.app/logout",
             {},
             {
               withCredentials: true,

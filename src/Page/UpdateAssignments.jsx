@@ -34,7 +34,7 @@ const UpdateAssignments = () => {
     };
 
     fetch(
-      `https://collabor-iq-server.vercel.app/assignments/${assignment._id}`,
+      `https://collabor-iq-server-nine.vercel.app/assignments/${assignment._id}`,
       {
         method: "PUT",
         headers: {

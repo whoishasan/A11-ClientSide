@@ -9,7 +9,7 @@ const StatsSection = () => {
     const fetchAssignments = async () => {
       try {
         const response = await fetch(
-          "https://collabor-iq-server.vercel.app/assignments"
+          "https://collabor-iq-server-nine.vercel.app/assignments"
         );
         const data = await response.json();
         setAssignments(data);

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 
 const axiosInstance = axios.create({
-  baseURL: "https://collabor-iq-server.vercel.app",
+  baseURL: "https://collabor-iq-server-nine.vercel.app",
   withCredentials: true,
 });
 
