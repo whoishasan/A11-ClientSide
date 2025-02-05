@@ -24,15 +24,15 @@ const CreateAssignments = () => {
     const newAssignment = {
       title,
       description,
-      marks: parseInt(marks, 100),
+      marks: parseInt(marks || 100),
       thumbnailUrl,
       difficulty,
       dueDate,
       userEmail,
       userName,
     };
-
-    fetch("https://studyhive-one.vercel.app/assignments", {
+    console.log(newAssignment);
+    fetch(`${import.meta.env.VITE_BASE_URL}/assignments`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

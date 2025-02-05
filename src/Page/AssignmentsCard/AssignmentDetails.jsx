@@ -26,7 +26,7 @@ const AssignmentDetails = () => {
           </p>
           <a
             href={`mailto:${assignment.userEmail}`}
-            className="px-4 py-2 bg-primary text-white rounded-md transition"
+            className="px-4 py-2 bg-primary  text-white rounded-md transition"
           >
             Contact
           </a>

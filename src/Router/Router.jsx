@@ -24,12 +24,12 @@ const router = createBrowserRouter(
         {
           path: "/",
           element: <Home />,
-          loader: () => fetch("https://studyhive-one.vercel.app/testimonial"),
+          loader: () => fetch(`${import.meta.env.VITE_BASE_URL}/testimonial`),
         },
         {
           path: "/assignments",
           element: <Assignments></Assignments>,
-          loader: () => fetch("https://studyhive-one.vercel.app/assignments"),
+          loader: () => fetch(`${import.meta.env.VITE_BASE_URL}/assignments`),
         },
         {
           path: "/Details/:id",
@@ -39,7 +39,7 @@ const router = createBrowserRouter(
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(`https://studyhive-one.vercel.app/${params.id}`),
+            fetch(`${import.meta.env.VITE_BASE_URL}/assignments/${params.id}`),
         },
         {
           path: "/submit-assignment/:id",
@@ -76,7 +76,7 @@ const router = createBrowserRouter(
         {
           path: "/pending-assignment",
           element: <PendingAssignment></PendingAssignment>,
-          loader: () => fetch("https://studyhive-one.vercel.app/submissions"),
+          loader: () => fetch(`${import.meta.env.VITE_BASE_URL}/submissions`),
         },
         {
           path: "update-campaign/:id",
@@ -86,7 +86,7 @@ const router = createBrowserRouter(
             </PrivateRoute>
           ),
           loader: ({ params }) =>
-            fetch(`https://studyhive-one.vercel.app/assignments/${params.id}`),
+            fetch(`${import.meta.env.VITE_BASE_URL}/assignments/${params.id}`),
         },
         {
           path: "/login",

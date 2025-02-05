@@ -9,7 +9,7 @@ const StatsSection = () => {
     const fetchAssignments = async () => {
       try {
         const response = await fetch(
-          "https://studyhive-one.vercel.app/assignments"
+          `${import.meta.env.VITE_BASE_URL}/assignments`
         );
         const data = await response.json();
         setAssignments(data);

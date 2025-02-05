@@ -11,7 +11,7 @@ const MySubmissions = () => {
     if (user?.email) {
       // Fetch submissions only if user is logged in
       axiosSecure
-        .get("/submissions")
+        .get(`/submissions?email=${user.email}`)
         .then((data) => {
           const filteredSubmissions = data.data.filter(
             (submission) => submission.user_email === user.email
@@ -45,6 +45,9 @@ const MySubmissions = () => {
                     Quick Note
                   </th>
                   <th className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm sm:text-base">
+                    Feed Back
+                  </th>
+                  <th className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm sm:text-base">
                     Status
                   </th>
                 </tr>
@@ -70,6 +73,9 @@ const MySubmissions = () => {
                     </td>
                     <td className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm sm:text-base">
                       {submission.quickNote?.slice(0, 80)}...
+                    </td>
+                    <td className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm sm:text-base">
+                      {submission.feedback?.slice(0, 80) || "No feedback yet"}
                     </td>
                     <td className="px-4 py-2 border border-gray-300 dark:border-gray-700 text-sm sm:text-base text-center">
                       <span

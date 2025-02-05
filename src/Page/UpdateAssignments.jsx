@@ -33,7 +33,7 @@ const UpdateAssignments = () => {
       userName,
     };
 
-    fetch(`https://studyhive-one.vercel.app/assignments/${assignment._id}`, {
+    fetch(`${import.meta.env.VITE_BASE_URL}/assignments/${assignment._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

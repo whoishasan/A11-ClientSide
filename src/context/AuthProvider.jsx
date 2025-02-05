@@ -61,9 +61,9 @@ const AuthProvider = ({ children }) => {
 
       if (currentUser?.email) {
         const user = { email: currentUser.email };
-
+        console.log(currentUser);
         axios
-          .post("https://studyhive-one.vercel.app/jwt", user, {
+          .post(`${import.meta.env.VITE_BASE_URL}/jwt`, user, {
             withCredentials: true,
           })
           .then((res) => {
@@ -73,7 +73,7 @@ const AuthProvider = ({ children }) => {
       } else {
         axios
           .post(
-            "https://studyhive-one.vercel.app/logout",
+            `${import.meta.env.VITE_BASE_URL}/logout`,
             {},
             {
               withCredentials: true,

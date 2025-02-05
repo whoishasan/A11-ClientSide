@@ -5,27 +5,27 @@ import AssignmentCard from "./AssignmentsCard/AssignmentCard";
 const Assignments = () => {
   const assignment = useLoaderData();
 
-  const [assignments, setAssignments] = useState(assignment);
   const [search, setSearch] = useState("");
   const [sortOption, setSortOption] = useState("title");
 
-  // Handle Deletion
-  const handleDelete = (id) => {
-    setAssignments(assignments.filter((ass) => ass._id !== id));
-  };
-
   // Filter and Sort Assignments
-  const filteredAndSortedAssignments = assignments
+  const filteredAndSortedAssignments = assignment
     .filter((ass) => ass?.title?.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => {
       if (sortOption === "title") {
         return a.title.localeCompare(b.title);
       } else if (sortOption === "difficulty") {
-        const difficultyOrder = { Easy: 1, Medium: 2, Hard: 3 };
+        const difficultyOrder = { Hard: 1, Medium: 2, Easy: 3 };
         return difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty];
       }
       return 0;
     });
+
+  // Handle Deletion
+  const handleDelete = (id) => {
+    const updatedAssignments = assignment.filter((ass) => ass._id !== id);
+    assignment.splice(0, assignment.length, ...updatedAssignments); // Update data directly for deletion
+  };
 
   return (
     <div>

@@ -31,7 +31,7 @@ const AssignmentCard = ({ assignment, onDelete }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://studyhive-one.vercel.app/assignments/${_id}`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/assignments/${_id}`, {
           method: "DELETE",
           headers: {
             "Content-Type": "application/json",

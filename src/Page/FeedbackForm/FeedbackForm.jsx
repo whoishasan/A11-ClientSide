@@ -16,7 +16,7 @@ const FeedbackForm = () => {
   // Fetch feedback list on page load
   useEffect(() => {
     axios
-      .get("https://studyhive-one.vercel.app/testimonial")
+      .get(`${import.meta.env.VITE_BASE_URL}/testimonial`)
       .then((response) => setFeedbackList(response.data))
       .catch((error) => console.error("Error fetching testimonials:", error));
   }, []);
@@ -61,7 +61,7 @@ const FeedbackForm = () => {
 
     // Submit the feedback to the API
     axios
-      .post("https://studyhive-one.vercel.app/testimonial", feedbackData)
+      .post(`${import.meta.env.VITE_BASE_URL}/testimonial`, feedbackData)
       .then((response) => {
         console.log("Feedback submitted:", response.data);
         setFeedbackList((prev) => [...prev, feedbackData]);

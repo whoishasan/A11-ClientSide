@@ -15,7 +15,7 @@ const PendingAssignments = () => {
 
   useEffect(() => {
     axiosSecure
-      .get("/submissions/pending")
+      .get(`/submissions/pending?user=${user?.email}`)
       .then((response) => setPendingAssignments(response.data))
       .catch(() => toast.error("Failed to load pending assignments."));
   }, [axiosSecure]);

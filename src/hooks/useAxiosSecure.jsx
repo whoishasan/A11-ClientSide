@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 
 const axiosInstance = axios.create({
-  baseURL: "https://studyhive-one.vercel.app",
+  baseURL: `${import.meta.env.VITE_BASE_URL}`,
   withCredentials: true,
 });
 

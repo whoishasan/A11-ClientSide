@@ -25,7 +25,7 @@ const AssignmentSubmit = () => {
       status: "Pending",
     };
 
-    fetch("https://studyhive-one.vercel.app/submissions", {
+    fetch(`${import.meta.env.VITE_BASE_URL}/submissions`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

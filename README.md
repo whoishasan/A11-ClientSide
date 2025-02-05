@@ -1,12 +1,40 @@
 # CollaborIQ
 
-## Purpose:
+## 🗂️ Project Overview:
 
 This project is designed as part of a job assessment for BJET Inc., focusing on developing a web application for online group study. The platform allows users to create assignments, complete them, and grade their friends' assignments. It demonstrates proficiency in the MERN stack and key web development skills.
 
 ## Live URL:
 
 [Live Site Link](https://leafy-monstera-bddb10.netlify.app)
+
+## Technologies used
+
+### Frontend:
+
+- HTML, CSS, and Tailwind CSS for responsive and visually appealing design.
+- JavaScript for interactive and dynamic user interfaces.
+- React.js for building a scalable and component-based UI.
+
+### Backend:
+
+- Node.js with Express.js for handling server-side logic and APIs.
+
+### Database:
+
+- MongoDB for efficient and flexible data storage of user and campaign information.
+
+### Authentication & Security:
+
+- JWT (JSON Web Token) or OAuth for secure user authentication.
+
+### Version Control:
+
+- Git and GitHub for collaborative development and version tracking.
+
+### Deployment:
+
+- Vercel for Backend or Netlify for frontend deployment.
 
 ## Key Features:
 
@@ -40,16 +68,6 @@ This project is designed as part of a job assessment for BJET Inc., focusing on 
 - `cors`: To handle cross-origin requests.
 - `bcrypt`: For password hashing.
 - `axios`: For API calls.
-
-## Deployment:
-
-- Client: Hosted on Firebase/Netlify.
-- Server: Hosted on Vercel.
-
-## Commits:
-
-- **Client-side**: Minimum 15 meaningful commits with descriptive messages.
-- **Server-side**: Minimum 8 meaningful commits with descriptive messages.
 
 ## Additional Notes:
 

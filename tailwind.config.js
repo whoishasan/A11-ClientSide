@@ -4,9 +4,10 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: ["Urbanist", "serif"],
+        primary: ["Sora"],
       },
       colors: {
-        primary: "#A026FF",
+        primary: "#0284c7",
         secondary: "#F7EBFF",
         darkBg: "#1C1C1C",
         darkGray: "#13031F",
