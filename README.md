@@ -79,3 +79,46 @@ This project is designed as part of a job assessment for BJET Inc., focusing on 
 
 - Loading spinner during data fetch.
 - Animations using Framer Motion.
+
+## How to run the project locally:
+
+### Prerequisites
+
+Make sure you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [Git](https://git-scm.com/)
+- [MongoDB](https://www.mongodb.com/) (for local database setup)
+
+**Clone the Repository**
+
+```bash
+git clone https://github.com/whoishasan/A11-ClientSide
+cd A10-client-side
+```
+
+**Installation**
+
+Run the following command to install all required packages:
+
+```bash
+npm install
+```
+
+**Configure**
+
+Create a .env file in the root directory and add the necessary environment variables. For example:
+
+```bash
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+STRIPE_API_KEY=your_stripe_key
+```
+
+**Use the command below to start the application locally:**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
