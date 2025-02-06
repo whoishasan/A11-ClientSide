@@ -94,7 +94,7 @@ Make sure you have the following installed on your system:
 
 ```bash
 git clone https://github.com/whoishasan/A11-ClientSide
-cd A10-client-side
+cd A11-client-side
 ```
 
 **Installation**
