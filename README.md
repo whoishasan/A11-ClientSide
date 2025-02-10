@@ -6,7 +6,7 @@ This project is designed as part of a job assessment for BJET Inc., focusing on 
 
 ## Live URL:
 
-[Live Site Link](https://leafy-monstera-bddb10.netlify.app)
+[Live Site Link](https://qollabor-iq.netlify.app)
 
 ## Technologies used
 
