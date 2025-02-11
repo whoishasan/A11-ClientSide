@@ -121,7 +121,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="text-2xl font-bold text-primary dark:text-primary">
-          <NavLink to="/">CollaborIQ</NavLink>
+          <NavLink to="/">Study Hive</NavLink>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

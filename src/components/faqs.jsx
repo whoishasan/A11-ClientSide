@@ -10,11 +10,11 @@ const Faqs = () => {
           <div className="collapse collapse-arrow bg-white dark:bg-neutral-800">
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title text-xl font-medium text-gray-900 dark:text-gray-100">
-              How does CollaborIQ work?
+              How does Study Hive work?
             </div>
             <div className="collapse-content text-gray-600 dark:text-gray-300">
               <p>
-                CollaborIQ is a collaborative platform that allows users to
+                Study Hive is a collaborative platform that allows users to
                 create, submit, and evaluate assignments in an engaging and
                 interactive way. Simply sign up, create an assignment, and share
                 it with peers for collaboration.
@@ -25,11 +25,11 @@ const Faqs = () => {
           <div className="collapse collapse-arrow bg-white dark:bg-neutral-800">
             <input type="radio" name="faq-accordion" />
             <div className="collapse-title text-xl font-medium text-gray-900 dark:text-gray-100">
-              Is CollaborIQ free to use?
+              Is Study Hive free to use?
             </div>
             <div className="collapse-content text-gray-600 dark:text-gray-300">
               <p>
-                Yes, CollaborIQ is free to use for creating and submitting
+                Yes, Study Hive is free to use for creating and submitting
                 assignments. However, premium features such as advanced
                 analytics and team management tools may have associated costs.
               </p>
@@ -43,7 +43,7 @@ const Faqs = () => {
             </div>
             <div className="collapse-content text-gray-600 dark:text-gray-300">
               <p>
-                Absolutely! CollaborIQ is designed for collaboration. Share
+                Absolutely! Study Hive is designed for collaboration. Share
                 assignments with peers, review submissions, and provide feedback
                 to enhance the learning experience.
               </p>
@@ -72,8 +72,8 @@ const Faqs = () => {
             <div className="collapse-content text-gray-600 dark:text-gray-300">
               <p>
                 Our support team is available 24/7. You can reach us through the
-                chat feature on the platform or send an email to
-                support@collaboriq.com. We’re here to help!
+                chat feature on the platform or send an email to support@Study
+                Hive.com. We’re here to help!
               </p>
             </div>
           </div>

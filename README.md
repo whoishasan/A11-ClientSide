@@ -1,4 +1,4 @@
-# CollaborIQ
+# Study Hive
 
 ## 🗂️ Project Overview:
 

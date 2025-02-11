@@ -15,11 +15,11 @@ const Footer = () => {
         <div className="space-y-4">
           <div className="flex items-center">
             <div className="normal-case text-2xl font-semibold">
-              <h1 className="text-primary ">CollaborIQ</h1>
+              <h1 className="text-primary ">Study Hive</h1>
             </div>
           </div>
           <p className="text-base max-w-72">
-            CollaborIQ is your ultimate platform for collaborative learning and
+            Study Hive is your ultimate platform for collaborative learning and
             group assignments. Empower your educational journey with intelligent
             tools and resources tailored for success.
           </p>
@@ -72,7 +72,7 @@ const Footer = () => {
             </li>
             <li>
               <a className="text-gray-600 dark:text-gray-300">
-                support@collaboriq.com
+                support@Study Hive.com
               </a>
             </li>
             <li>
@@ -90,7 +90,7 @@ const Footer = () => {
       {/* Footer Bottom */}
       <aside className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
         <p className="text-gray-800 dark:text-gray-200 text-center lg:text-left">
-          © {new Date().getFullYear()} CollaborIQ - All rights reserved.
+          © {new Date().getFullYear()} Study Hive - All rights reserved.
         </p>
         <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0">
           <a
