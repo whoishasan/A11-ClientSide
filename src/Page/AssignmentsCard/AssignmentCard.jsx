@@ -98,10 +98,10 @@ const AssignmentCard = ({ assignment, onDelete }) => {
           <p
             className={`text-sm font-medium mt-2 rounded-full py-1 px-4 text-white ${
               difficulty === "Easy"
-                ? "bg-green-500"
+                ? "bg-green-600"
                 : difficulty === "Medium"
-                ? "bg-yellow-500"
-                : "bg-red-500"
+                ? "bg-blue-700"
+                : "bg-red-700"
             }`}
           >
             {difficulty}
@@ -113,7 +113,7 @@ const AssignmentCard = ({ assignment, onDelete }) => {
           {/* View Assignment */}
           <Link to={`/details/${_id}`}>
             <button
-              className="flex items-center justify-center px-4 py-2 bg-blue-500 text-white rounded-lg font-medium transition hover:bg-blue-600"
+              className="flex items-center justify-center px-4 py-2 bg-transparent border border-blue-700 text-blue-600  rounded-lg font-medium transition "
               title="View Assignment"
             >
               <Eye className="w-4 h-4 mr-2" />
@@ -124,7 +124,7 @@ const AssignmentCard = ({ assignment, onDelete }) => {
           {/* Update Assignment */}
           <Link to={`/update-campaign/${_id}`}>
             <button
-              className="flex items-center justify-center px-4 py-2 bg-yellow-500 text-white rounded-lg font-medium transition hover:bg-yellow-600"
+              className="flex items-center justify-center px-4 py-2 bg-transparent border border-purple-700 text-purple-700 rounded-lg font-medium transition "
               title="Update Assignment"
             >
               <Edit className="w-4 h-4 mr-2" />
@@ -135,7 +135,7 @@ const AssignmentCard = ({ assignment, onDelete }) => {
           {/* Delete Assignment */}
           <button
             onClick={() => handleDelete(_id)}
-            className="flex items-center justify-center px-4 py-2 bg-red-500 text-white rounded-lg font-medium transition hover:bg-red-600"
+            className="flex items-center justify-center px-4 py-2 bg-transparent border border-red-700 text-red-700 rounded-lg font-medium transition"
             title="Delete Assignment"
           >
             <Trash2 className="w-4 h-4 mr-2" />

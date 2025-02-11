@@ -4,7 +4,7 @@ import { Check, Eye, EyeOff, X } from "lucide-react";
 import { useContext, useMemo, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
-import singIn from "../assets/lottie/Animation - 1733417495925.json";
+import singIn from "../assets/lottie/Animation - 1735051920298.json";
 import { AuthContext } from "./../context/AuthProvider";
 
 const PASSWORD_REQUIREMENTS = [
@@ -115,15 +115,15 @@ const Register = () => {
   };
 
   return (
-    <div className="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1">
+    <div className="max-w-screen-xl m-0 sm:m-10 bg-white sm:rounded-lg flex justify-center flex-1">
       <div className="max-w-md w-full">
-        <div className="p-8 rounded-2xl bg-white shadow">
+        <div className="p-8 rounded-2xl ">
           <h2 className="text-gray-800 text-center text-2xl font-bold my-3">
             Sign up
           </h2>
           <div>
             <button
-              className="w-full font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow"
+              className="w-full font-bold shadow-sm rounded-lg py-3 border border-blue-400 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow-black"
               onClick={handleGoogle}
             >
               <div className="bg-white p-2 rounded-full">
@@ -149,7 +149,7 @@ const Register = () => {
               <span className="ml-4">Sign Up with Google</span>
             </button>
             <button
-              className="w-full font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow mt-5"
+              className="w-full font-bold shadow-sm rounded-lg py-3 border border-blue-400 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow-black mt-5"
               onClick={handleGitHub}
             >
               <div className="bg-white p-1 rounded-full">
@@ -162,17 +162,6 @@ const Register = () => {
               </div>
               <span className="ml-4">Sign Up with GitHub</span>
             </button>
-
-            <div className="mt-4 flex items-center justify-between">
-              <span className="border-b w-1/5 lg:w-1/4"></span>
-              <a
-                href="#"
-                className="text-xs text-center text-gray-500 uppercase"
-              >
-                or Sign up with email
-              </a>
-              <span className="border-b w-1/5 lg:w-1/4"></span>
-            </div>
           </div>
           <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
             <div>
@@ -353,7 +342,7 @@ const Register = () => {
           </form>
         </div>
       </div>
-      <div className="flex-1 bg-indigo-100 text-center hidden lg:flex items-center">
+      <div className="flex-1  text-center hidden lg:flex items-center">
         <div className="m-12 xl:m-16 w-full">
           <Lottie animationData={singIn} loop={true} />
         </div>
