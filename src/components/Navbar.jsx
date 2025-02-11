@@ -40,18 +40,33 @@ const Navbar = () => {
           Assignments
         </NavLink>
       </li>
-
+      <li>
+        <NavLink
+          to="/create-assignments"
+          className={({ isActive }) => (isActive ? activeStyle : "")}
+        >
+          Create Assignments
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/pending-assignment"
+          className={({ isActive }) => (isActive ? activeStyle : "")}
+        >
+          Pending Assignment
+        </NavLink>
+      </li>
       {user?.email && (
         <>
           <li>
             <NavLink
-              to="/create-assignments"
+              to="/my-submissions"
               className={({ isActive }) => (isActive ? activeStyle : "")}
             >
-              Create Assignments
+              My Submissions
             </NavLink>
           </li>
-          <li tabIndex={0} className="dropdown">
+          {/* <li tabIndex={0} className="dropdown">
             <label className="flex items-center cursor-pointer">
               <span>More</span>
               <svg
@@ -70,24 +85,9 @@ const Navbar = () => {
               </svg>
             </label>
             <ul className="dropdown-content menu shadow bg-base-100 rounded-box w-52 z-50">
-              <li>
-                <NavLink
-                  to="/my-submissions"
-                  className={({ isActive }) => (isActive ? activeStyle : "")}
-                >
-                  My Submissions
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/pending-assignment"
-                  className={({ isActive }) => (isActive ? activeStyle : "")}
-                >
-                  Pending Assignment
-                </NavLink>
-              </li>
+            
             </ul>
-          </li>
+          </li> */}
         </>
       )}
     </>
@@ -172,7 +172,7 @@ const Navbar = () => {
               {/* Feedback */}
               <li className="mt-2">
                 <a
-                  href="https://www.linkedin.com/in/ajnahid"
+                  href="https://www.linkedin.com/in/web-developer-mehedihasan"
                   className="flex items-center gap-2"
                 >
                   <IoIosCall className="text-2xl" />
