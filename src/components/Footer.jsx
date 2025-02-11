@@ -38,19 +38,13 @@ const Footer = () => {
               View Assignments
             </NavLink>
             <NavLink
-              to="/create-assignment"
+              to="/create-assignments"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary link link-hover"
             >
               Create an Assignment
             </NavLink>
             <NavLink
-              to="/my-assignments"
-              className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary link link-hover"
-            >
-              My Assignments
-            </NavLink>
-            <NavLink
-              to="/submitted-assignments"
+              to="/my-submissions"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary link link-hover"
             >
               Submitted Assignments
@@ -115,14 +109,7 @@ const Footer = () => {
           >
             <FaTwitter className="text-[#1DA1F2]" />
           </a>
-          <a
-            className="rounded-full bg-gray-200 dark:bg-gray-700 p-2"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="text-[#F56040]" />
-          </a>
+
           <a
             className="rounded-full bg-gray-200 dark:bg-gray-700 p-2"
             href="https://www.linkedin.com/"
