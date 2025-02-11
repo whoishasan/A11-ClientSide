@@ -15,9 +15,10 @@ const MainLayout = () => {
 
   return (
     <div>
-      <nav className="w-11/12 mx-auto py-1">
+      <nav className="w-full fixed justify-center flex z-[999999] border-b">
         <Navbar />
       </nav>
+      <div className="flex w-full py-10"></div>
       <div className="py-5">
         <div className="w-11/12 mx-auto max-w-6xl">
           <Outlet />
