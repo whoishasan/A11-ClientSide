@@ -42,12 +42,12 @@ const Testimonials = () => {
   const firstRow = reviews.slice(0, reviews.length / 3);
 
   return (
-    <div className="bg-white dark:bg-gray-900 py-12">
+    <div className="bg-white dark:bg-gray-900">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold text-center mb-8 dark:text-gray-200">
           What are they saying?
         </h2>
-        <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-10">
+        <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden py-2">
           <Marquee pauseOnHover className="[--duration:20s]">
             {firstRow.map((review) => (
               <ReviewCard key={review._id} {...review} />
